@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme=dark>
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetroPathFinder</title>
+    <link rel="icon" href="./metro_img_no_bg.png" type="image/x-icon">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+    <link href="./bootstrap_assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- jQuery library -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+<header>
+
+  <div class="px-3 py-2">
+    <div class="container">
+      <div class="position-absolute top-0 end-0">
+
+        <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                   
+          <li>
+            <button type ="button" class="btttn" id="Share">
+              <a href="#" class="nav-link text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi d-block mx-auto mb-1 bi-share-fill" viewBox="0 0 16 16">
+                  <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5"/>
+                </svg>
+              </a>
+            </button>  
+            <div class="modal fade" id="popupShareModal" tabindex="-1" role="dialog" aria-labelledby="popupModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content ">
+                  <div class="modal-body text-center">
+                    Link copied to Clipboard.
+                  </div>
+                </div>
+              </div>
+            </div>          
+          </li>
+          
+          <li>
+            <button type ="button" class="btttn" >
+              <a href="https://google.com" class="nav-link text-white" target="_blank">
+                <svg class="bi d-block mx-auto mb-1" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                </svg>               
+              </a>
+            </button>
+            
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+</header>
+<body>
+  
+
+    <div class="container col-xxl-8 px-4 py-1">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="metro_img_no_bg.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">MetroPathFinder: </h1>
+            <h2 class="display-5  text-body-emphasis lh-1 mb-3">Your Journey, Simplified.</h2>
+            <p class="lead">Discover MetroPathFinder, your go-to for efficient metro travel. Enter your journey’s start and end points, and let our web app do the rest. Using advanced algorithms, we calculate the quickest route, saving you time. Ideal for daily commuters and first-time metro users alike. Make your metro travels effortless with MetroPathFinder. Start exploring now!</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" onclick="scrollToSection()">Get the shortest route</button>
+              
+              <a class="btn btn-primary btn-lg px-4 me-md-2" href="./delhi_metro_map.jpg" target="_blank">
+                Delhi metro map
+              </a>
+                
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container col-xxl-8 px-4 py-1">
+        <h5 class="display-6  text-body-emphasis lh-1 mb-3">Select your source and destination.</h5>
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+
+          <div class="dropdown d-flex justify-content-between" id="find-path">
+
+            
+              <button class="btn btn-info rounded-pill dropdown-toggle source" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Source
+              </button>
+              <div class="dropdown-menu " aria-labelledby="dropdownMenuButton" id="dropdownMenu1">
+                <input type="text" class="form-control search-input" placeholder="Search">
+                  <div class="dropdown-content">
+                    <!-- Dropdown items will be populated dynamically here -->
+                  </div>
+                <!-- Dropdown items will be generated dynamically here -->
+              </div>
+            
+
+            
+              <button class="btn btn-info rounded-pill dropdown-toggle destination" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Destination
+              </button>
+              <div class="dropdown-menu " aria-labelledby="dropdownMenuButton" id="dropdownMenu2">
+                <input type="text" class="form-control search-input" placeholder="Search">
+                  <div class="dropdown-content">
+                    <!-- Dropdown items will be populated dynamically here -->
+                  </div>
+                <!-- Dropdown items will be generated dynamically here -->
+              </div>
+
+              <button id="findPathBtn"  class="btn btn-success d-inline-flex align-items-center"  onclick="findPathButton()">
+                 
+                Get Route
+                <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+                  <symbol id="arrow-right-short" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                  </symbol>
+                  <symbol id="x-lg" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+                    <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+                  </symbol>
+                </svg>
+                <svg class="bi ms-1" width="20" height="20"><use xlink:href="#arrow-right-short"/></svg>
+              </button>     
+  
+          </div>
+
+          <table  class="table table-hover" id="shortestPathTable">
+            <thead>
+              
+            </thead>
+            <tbody id="tableContainer">
+              <!-- Table body will be populated by JavaScript -->
+            </tbody>
+          </table>
+          <div id="totalStations" class="display-6  text-body-emphasis lh-1 mb-3"></div> 
+
+        </div>
+
+        
+
+      </div>
+
+      <script type="text/javascript" src="./algo.js" ></script>
+
+      <script type="text/javascript" src="./index.js" ></script>
+</body>
+
+
+</html>
